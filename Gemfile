@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
@@ -29,7 +29,10 @@ group :development, :test do
 end
 
 group :test do
+  gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'spork'
+  gem 'guard-spork'
 end
 
 gem 'jquery-rails'
