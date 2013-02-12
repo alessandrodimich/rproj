@@ -1,5 +1,7 @@
 Rproj::Application.routes.draw do
 
+  devise_for :users
+
   root to: "home#welcome"
 
   get "home/welcome"
