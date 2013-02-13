@@ -1,6 +1,11 @@
 Rproj::Application.routes.draw do
 
-  root to: "home#welcome"
+  authenticated :user do
+    root :to => 'home#index'
+  end
+
+  root :to => "home#welcome"
+  devise_for :users
 
   get "home/welcome"
 
