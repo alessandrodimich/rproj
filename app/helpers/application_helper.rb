@@ -12,7 +12,7 @@ module ApplicationHelper
     html.html_safe
   end
 
-  def is_owner(user)
+  def verify_user(user)
 
     current_user.id == user.id
 

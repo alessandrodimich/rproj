@@ -3,6 +3,6 @@
 
   <p>User: <%= user.username %> <%= is_owner(user) %> <%= link_to('Edit account', edit_user_registration_path) %></p>
 
-  <%= is_owner(user) %>
+  <%= verify_user(user) %>
 
 <% end %>
