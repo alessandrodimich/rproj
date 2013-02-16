@@ -1,8 +1,4 @@
 <h3>Home of <%= current_user.username %></h3>
 <% @users.each do |user| %>
-
-  <p>User: <%= user.username %> <%= verify_user(user) %> <%= link_to('Edit account', edit_registration_path(user)) %> ciao</p>
-
-
-
+  <p>User: <%=link_to user.username, user %></p>
 <% end %>
