@@ -9,6 +9,8 @@ gem 'pg'
 gem 'figaro'
 gem 'devise'
 gem 'simple_form'
+gem 'rolify'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -21,11 +23,18 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-rspec'
   gem 'guard-livereload'
+end
+
+
+group :development do
+  gem 'better_errors'
 end
 
 group :test do
