@@ -9,6 +9,7 @@ gem 'pg'
 gem 'figaro'
 gem 'devise'
 gem 'simple_form'
+gem 'cancan'
 gem 'rolify'
 
 # Gems used only for assets and not required
