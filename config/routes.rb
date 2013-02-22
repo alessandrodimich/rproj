@@ -9,9 +9,8 @@ Rproj::Application.routes.draw do
   root :to => "home#welcome"
   devise_for :users
 
-  get "home/welcome"
+  resources :users
 
-  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
